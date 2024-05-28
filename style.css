@@ -4,3 +4,22 @@
     margin: 0px;
     padding: 0px;
 }
+
+/*paleta de cores do projeto*/
+:root {
+    --cor01:#E6F2F5;
+    --cor02:#8DCCF0;
+    --cor03:#8FB2CF;
+    --cor04:#B1BABA;
+    --cor05:#414445;
+}
+
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
