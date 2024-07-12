@@ -5,21 +5,55 @@
     padding: 0px;
 }
 
-/*paleta de cores do projeto*/
-:root {
-    --cor01:#E6F2F5;
-    --cor02:#8DCCF0;
-    --cor03:#8FB2CF;
-    --cor04:#B1BABA;
-    --cor05:#414445;
-}
-
 html{
     height: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #8DCCF0, #8FB2CF);
     
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+div{
+    text-align: center;
+}
+
+h1{
+    font-size: 10rem;
+    margin-bottom: 4rem;
+    background-color: steelblue;
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+button{    
+    font-size: 2rem;
+    margin: 0 0.3rem;
+    padding: 0.8rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.iniciar{
+    background-color: springgreen;
+}
+
+.pausar{
+    background-color: red;
+}
+
+.zerar{
+    background-color: yellow;
 }
