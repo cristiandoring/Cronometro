@@ -1,19 +1,22 @@
 var segundos = 0;
 var minutos = 0;
 var milisegundos = 0;
+var intervalo
 
 
 function iniciar(){
     //chama a função contador a cada 0.1s (100ms)
-    setInterval(cronometro,100)
+     intervalo = setInterval(cronometro,100)
 }
 
 function pausar(){
-    console.log("pausando...")
+    //pausa o tempo do cronômetro quando chama a função intervalo
+    clearInterval(intervalo)
 }
 
 function zerar(){
-    console.log("zerando...")
+    document.getElementById('relogio').innerText = "00:00:00"
+    intervalo=0;
 }
 
 function cronometro(){
