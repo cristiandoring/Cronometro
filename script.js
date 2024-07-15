@@ -6,7 +6,7 @@ var intervalo
 
 function iniciar(){
     //chama a função contador a cada 1s (1000ms)
-     intervalo = setInterval(cronometro,1000)
+     intervalo = setInterval(cronometro,0.001)
 }
 
 function pausar(){
@@ -34,20 +34,16 @@ function cronometro(){
     
 
     
-    document.getElementById('relogio').innerText = horas + ":" + minutos + ":" + segundos
+    document.getElementById('relogio').innerText = formatar(horas) + ":" + formatar(minutos) + ":" + formatar(segundos)
 
 }
 
-function formatar(){
-    if(segundos <10){
-        segundos = "0" + segundos
+function formatar(digito){
+    if(digito <10){
+        return("0" + digito)
+    }
+    else{
+        return(digito)
     }
    
-    if(minutos <10){
-        minutos = "0" + minutos
-    }
-
-    if(horas <10){
-        horas = "0" + horas
-    }
 }
