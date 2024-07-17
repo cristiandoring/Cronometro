@@ -3,6 +3,9 @@ var minutos = 0;
 var horas = 0;
 var intervalo
 
+const audio = new Audio();
+
+audio.src="./sons/button-9-88354.mp3";
 
 function iniciar(){
 
